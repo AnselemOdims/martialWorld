@@ -1,0 +1,9 @@
+function digitize(n){
+    const newArray = [];
+    const string = n.toString().split("");
+    for (let i=0; i< string.length; i++){
+        let n = parseInt(string[i],10);
+        newArray.push(n);
+    }
+    return newArray;
+}
