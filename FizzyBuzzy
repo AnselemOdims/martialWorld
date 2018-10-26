@@ -20,4 +20,64 @@ function myNumbers(){
     }
   return numberArray; 
 }
-console.log(myNumbers());
+console.log(myNumbers());//this outputs all other numbers btw 1 and 100 except te ones divisible by 3 or 5 which are returned as "Fizz" and "Buzz"
+
+
+
+//OR//OR//OR//OR//OR//
+const fizzybuzz = function(){
+    for (let i=1; i<=100;i++){
+        let fizz = i % 3,
+            buzz = i % 5;
+        if (fizz === 0){
+            console.log("fizz")
+        }else if(buzz === 0){
+            console.log("buzz")
+        }else if(fizz===0 && buzz===0){
+            console.log("fizzbuzz")
+        }else{console.log(i)}
+    }
+}
+
+fizzybuzz();
+
+//OR//OR//OR//OR//OR//
+
+const  fizzybuzzy = () => {
+let numArr = [];
+for(let count=1; count<=100; count++){
+numArr.push(count);
+}
+let newArr = numArr.map(num => {
+if (num % 3 ===0 && num % 5 ===0){
+return "FizzBuzz"}
+else if (num % 3 ===0 && num % 5 !==0){
+return "Fizz"}
+else if (num % 3 !==0 && num % 5 ===0){
+return "Buzz"}
+else{return num}
+});
+console.log(newArr);
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
