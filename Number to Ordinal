@@ -1,0 +1,39 @@
+function numberToOrdinal(n){
+   let myString = n.toString();
+    let string1length = myString.length;
+    let lastChar = myString.charAt(string1length - 1);
+    let lastTwoChar = myString.slice(-2);
+    let singleDigits = (n<10).toString();
+    if(myString === "0"){
+        return myString;
+    }
+     else if(lastTwoChar==="11"){
+    return myString + "th"
+}
+   else if(lastTwoChar==="12"){
+    return myString + "th"
+   }    
+    else  if(lastTwoChar==="13"){
+    return myString + "th"
+
+}
+     else if(lastChar ==="1"){
+        return myString + "st";
+
+    }
+   else if(lastChar ==="2"){
+        return myString + "nd";}
+    
+     else if(lastChar ==="3"){
+        return myString + "rd";}
+    
+    else if(myString === "4" || myString === "5" || myString === "6" || myString === "7" || myString === "8" || myString === "9"){
+        return myString + "th"}
+    
+    
+   else {
+       return myString + "th";
+   }
+    
+    return n;
+}
