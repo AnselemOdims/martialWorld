@@ -1,0 +1,23 @@
+function myNumbers(){
+    let numberArray=[];
+    for(let i=1; i<=100; i++){
+       numberArray.push(i);
+ }
+    for (let j=0; j<numberArray.length; j++){
+        //console.log(numberArray[j]);
+        if(numberArray[j] % 3===0 && numberArray[j] % 5!==0){
+          numberArray[j] = "Fizz";
+        }
+        else if(numberArray[j] % 5===0 && numberArray[j] % 3!==0){
+          numberArray[j] = "Buzz";
+        }
+       else if(numberArray[j] % 3===0 && numberArray[j] % 5===0){
+           numberArray[j] = "FizzBuzz";
+        }
+        else{
+           numberArray[j];
+        }
+    }
+  return numberArray; 
+}
+console.log(myNumbers());
