@@ -1,0 +1,22 @@
+const myFunction = (x,y) => {
+   let numbers = [];
+    if(x > y){
+        for(let i=y; i< x; i++){
+            if(i!==x && i!==y && i % 2 === 0){
+                //console.log(i);
+                numbers.push(i);
+            }
+        }
+        
+    }else{
+        for(let i=x; i<y; i++){
+            if(i!==x && i!==y && i % 2 !== 0){
+          //console.log(i);
+
+    numbers.push(i)
+
+    }
+}
+    }
+    return numbers;
+}
