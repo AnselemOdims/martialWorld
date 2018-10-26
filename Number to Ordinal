@@ -37,3 +37,34 @@ function numberToOrdinal(n){
     
     return n;
 }
+
+
+////OR//OR//OR
+function numberToOrdinal1(n){
+   let myString = n.toString();
+    let string1length = myString.length;
+    let lastChar = myString.charAt(string1length - 1);
+    let lastTwoChar = myString.slice(-2);
+    
+     if(lastTwoChar==="11" || lastTwoChar==="12" || lastTwoChar==="13" ){
+    return myString + "th"
+}
+ 
+     else if(lastChar ==="1"){
+        return myString + "st";
+
+    }
+   else if(lastChar ==="2"){
+        return myString + "nd";}
+    
+     else if(lastChar ==="3"){
+        return myString + "rd";}
+    
+   else {
+       return myString + "th";
+   }
+    
+    return n;
+}
+
+
