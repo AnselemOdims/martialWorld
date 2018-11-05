@@ -1,0 +1,12 @@
+function rotateString(){
+    var element = document.getElementById("target")
+    var textNode= element.childNodes[0];
+    var text= textNode.data;
+setInterval(function (){
+    const txt= text.length-1;
+    text= text[txt] + text.substring(0, txt);
+    textNode.data= text;
+}, 500);
+}
+//console.log(rotateString);
+//500 represents the amount of time in milliseconds that it takes the string to rotate from left to right
