@@ -1,0 +1,18 @@
+var num= Math.ceil(Math.random() * 10);
+var guessNum= prompt("Input Guess Number");
+if (guessNum> 10){
+   alert ("Your guess should be within the range of 1-10")
+}else 
+{if(guessNum!==num){
+   alert("You Almost Got it right, but the number is: " + num)
+}else {alert ("Totally right ")}}
+
+let Num= Math.ceil(Math.random() * 10);
+let gNum= prompt("Input ur guess number ");
+if (gNum>10){
+  alert ("Please input a number from 1 to 10")
+}
+else {
+    if(gNum==Num){alert("Yaaaay!, you got it right")}
+ else{ alert("Wrong sir!, the right number is = " + Num)}
+};
