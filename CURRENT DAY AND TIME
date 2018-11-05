@@ -1,0 +1,28 @@
+const today = new Date();
+const day= today.getDay();
+const daylist= ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+console.log("Today's date is: " + daylist[day]);
+
+let hours= today.getHours();
+const minute= today.getMinutes();
+const second= today.getSeconds();
+const milli= today.getMilliseconds();
+let prepand= (hours >= 12) ? "PM" :  "AM";
+hours = (hours >= 12) ? hours-12 : hours;
+if (hours===0 && prepand=== "PM")
+    {
+        if (minute===0 && second===0 && milli===0)
+            {
+              hours= 12;
+              prepand= " Noon"  
+            }
+        else{hours=12; prepand= " PM"}
+    }
+if (hours===0 && prepand===" AM"){
+    if (minute===0 && second===0 && milli===0){
+        hours=12; prepand=" Midnight"
+    }
+    else{hours=12; prepand=" AM"}
+}
+
+//console.log("Current time: " + hours + " "+ prepand +" : " +minute +" : " +second +" : " +milli)
