@@ -1,0 +1,5 @@
+var year= window.prompt("Input the year "); 
+
+y = (year % 100===0)? (year % 400===0) : (year % 4===0);
+
+console.log(y );
