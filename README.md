@@ -1,2 +1,2 @@
 # martialWorld
-Repository of the codeMartial. The codes of the 'soon-to-be-the-greatest-coder'. 
+Repository of the codeMartial. A Programming Enthusiast'. 
